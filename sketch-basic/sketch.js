@@ -1,15 +1,17 @@
-function setup(){
-    createCanvas(500, 500);
-    angleMode(DEGREES);
-}
+new p5((p) => {
+  p.setup = () => {
+    p.createCanvas(500, 500).parent('basic-sketch');
+    p.angleMode(p.DEGREES);
+  };
 
-function draw(){
-    background(50);
+  p.draw = () => {
+    p.background(50);
 
-    let x = 250 + 100 * sin(frameCount * 0.5);
-    let y = 250 + 100 * cos(frameCount * 0.5);
+    let x = 250 + 100 * Math.sin(p.frameCount * 0.5);
+    let y = 250 + 100 * Math.cos(p.frameCount * 0.5);
 
-    fill(250, 200, 225);
-    noStroke();
-    circle(x, y, 40);
-}
+    p.fill(250, 200, 225);
+    p.noStroke();
+    p.circle(x, y, 40);
+  };
+});
