@@ -1,10 +1,10 @@
-new p5((p) => {
-  p.setup = () => {
-    p.createCanvas(500, 500).parent('basic-sketch');
+let basicSketch = function(p) {
+  p.setup = function() {
+    p.createCanvas(500, 500);
     p.angleMode(p.DEGREES);
   };
 
-  p.draw = () => {
+  p.draw = function() {
     p.background(50);
 
     let x = 250 + 100 * Math.sin(p.frameCount * 0.5);
@@ -14,4 +14,6 @@ new p5((p) => {
     p.noStroke();
     p.circle(x, y, 40);
   };
-});
+};
+
+new p5(basicSketch, 'basic-sketch');
