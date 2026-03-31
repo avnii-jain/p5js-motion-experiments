@@ -1,6 +1,6 @@
 # 🎨 p5.js Motion Experiments
 
-This repository contains a set of beginner-friendly experiments built using p5.js to explore motion, animation, and mathematical visualization.
+This repository demonstrates my initial exploration of creative coding using p5.js, focusing on motion, animation, and mathematical visualization.
 
 ## 🚀 Overview
 
